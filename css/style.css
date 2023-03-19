@@ -1,0 +1,341 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* ESTILOS GENERALES */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500&display=swap');
+
+body {
+    font-family: sans-serif;
+}
+
+#main {
+    margin-top: 66px;
+}
+
+/* INICIO */
+
+#bodyIndex {
+    background-color: #212529;
+}
+
+footer button {
+    margin-top: 10px;
+    justify-content: end;
+}
+
+#indexMusicGalery h4 {
+    color: grey;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.playlistcontainer {
+    margin-right: 220px;
+    margin-left: 220px;
+}
+
+.playlist {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+
+/* PRODUCTORAS */
+
+#productorasmain {
+    margin: 0px 200px;
+    margin-top: 116px;
+}
+
+.productora {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.productoraInfo {
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 800px;
+}
+
+.productoraInfo h3 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 100;
+    font-size: 3rem;
+}
+
+.productoraInfo p {
+    padding-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.productoraRRSS {
+    display: flex;
+    justify-content: end;
+}
+
+.productoraLinkRRSS {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 20px;
+}
+
+.productoraLinkRRSS a {
+    margin: 0px 10px;
+    margin-top: 20px;
+}
+
+/* GALERIA */
+
+.galeriacontainer {
+    display: flex;
+    justify-content: center;
+}
+
+#galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(11, 300px);
+    grid-template-areas:
+    "rectangular01 rectangular01 rectangular01 cuadrada01"
+    "rectangular01 rectangular01 rectangular01 cuadrada02"
+    "cuadrada03 iframe01 iframe01 iframe01"
+    "cuadrada04 iframe01 iframe01 iframe01"
+    "rectangular02 rectangular02 rectangular03 rectangular03"
+    "rectangular02 rectangular02 rectangular03 rectangular03"
+    "iframe02 iframe02 iframe02 rectangularvertical01"
+    "iframe02 iframe02 iframe02 rectangularvertical01"
+    "cuadrada05 cuadrada06 cuadrada07 cuadrada08"
+    "rectangular04 rectangular04 rectangular04 rectangular04"
+    "rectangular04 rectangular04 rectangular04 rectangular04";
+    margin: 30px;
+}
+
+.rectangular01 {
+    grid-area: rectangular01;
+}
+
+.rectangular02 {
+    grid-area: rectangular02;
+}
+
+.rectangular03 {
+    grid-area: rectangular03;
+}
+
+.rectangular04 {
+    grid-area: rectangular04;
+}
+
+.cuadrada01 {
+    grid-area: cuadrada01;
+}
+
+.cuadrada02 {
+    grid-area: cuadrada02;
+}
+
+.cuadrada03 {
+    grid-area: cuadrada03;
+}
+
+.cuadrada04 {
+    grid-area: cuadrada04;
+}
+
+.cuadrada05 {
+    grid-area: cuadrada05;
+}
+
+.cuadrada06 {
+    grid-area: cuadrada06;
+}
+
+.cuadrada07 {
+    grid-area: cuadrada07;
+}
+
+.cuadrada08 {
+    grid-area: cuadrada08;
+}
+
+.rectangularvertical01 {
+    grid-area: rectangularvertical01;
+}
+
+.iframe01 {
+    grid-area: iframe01;
+}
+
+.iframe02 {
+    grid-area: iframe02;
+}
+
+/* EVENTOS */
+
+#eventos {
+    margin: 66px 30px 30px 30px;
+}
+
+#eventosGrilla {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.flyercontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.eventosFlyer {
+    margin-bottom: 20px;
+    filter: grayscale(100%);
+}
+
+.eventosFlyer:hover {
+    filter: grayscale(0%);
+    transition: 0s;
+}
+
+.eventosNombreYProductora {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 30px;
+    padding-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.eventosNombreYProductora div h2 {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.LineUp {
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.LineUpDJContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 20px;
+    margin-top: 40px;
+    width: 400px;
+}
+
+.fotodj {
+    border-radius: 50%;
+}
+
+.LineUpDJinfo h4 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.LineUpDJinfo p {
+    padding: 20px 0px;
+    text-align: justify;
+    color: grey;
+    font-size: 0.8rem;
+}
+
+.eventosInfo {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    /* padding-bottom: 20px; */
+}
+
+.eventosInfo h5, .eventosInfo h6 {
+    text-align: center;
+}
+
+/* NOSOTROS */
+
+.mainNosotros {
+    display: flex;
+    justify-content: center;
+}
+
+.nosotroscontainer {
+    max-width: 1000px;
+}
+
+.nosotroscontainer p {
+    text-align: justify;
+    padding: 50px;
+    max-width: 600px;
+}
+
+.nosotrosTitulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nosotrosTitulo h1 {
+    font-size: 13rem;
+    font-weight: bolder;
+    letter-spacing: 15px;
+}
+
+.nosotrosPLUR {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.nosotrosPLURIconos {
+    display: flex;
+    flex-direction: column;
+}
+
+.nosotrosPLURIconos div img {
+    padding: 20px;
+}
+
+.nosotrosAboutUsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.nosotrosTitulo, .nosotrosPLUR, .nosotrosAboutUsContainer {
+    margin: 30px 0px;
+    justify-content: center;
+}
+
+.aboutUsYBotonContacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
