@@ -1,0 +1,25 @@
+#bodyIndex {
+    background-color: $mainColor;
+    #indexMusicGalery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h4 {
+            color: grey;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .playlistcontainer {
+            max-width: 1300px;
+            .playlist {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                iframe {
+                    margin: 30px 25px;
+                }
+            }
+        }
+    }
+}
+
