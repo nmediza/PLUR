@@ -6,6 +6,16 @@
         flex-wrap: wrap;
         justify-content: center;
         margin-bottom: 50px;
+        .productorasInfoLogo {
+            @include mobileLg {
+                width: 300px;
+                height: 300px;
+            }
+            @include mobileSm {
+                width: 280px;
+                height: 280px;
+            }
+        }
         .productoraInfo {
             padding: 30px 50px;
             display: flex;
@@ -16,11 +26,26 @@
                 text-align: center;
                 font-weight: 100;
                 font-size: 3rem;
+                @include mobileLg {
+                    font-size: 2rem;
+                }
+                @include mobileSm {
+                    font-size: 2rem;
+                }
             }
             p {
                 padding-top: 20px;
                 line-height: 1.5;
                 text-align: justify;
+                @include tablet {
+                    width: 400px;
+                }
+                @include mobileLg {
+                    width: 300px;
+                }
+                @include mobileSm {
+                    width: 280px;
+                }
             }
             .productoraRRSS {
                 display: flex;

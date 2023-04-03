@@ -1,25 +1,351 @@
 #bodyIndex {
-    background-color: $mainColor;
-    #indexMusicGalery {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        h4 {
-            color: grey;
-            text-align: center;
-            margin-top: 40px;
-        }
-        .playlistcontainer {
-            max-width: 1300px;
-            .playlist {
+    background-color:  #212529;
+    #main {
+        #titleContainer {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            flex-wrap: wrap;
+            @include tablet {
+                align-items: center;
+            }
+            @include mobileLg {
+                align-items: center;
+            }
+            @include mobileSm {
+                align-items: center;
+            }
+            h1 {
+                margin: 70px 0px;
+                color: white;
+                text-align: center;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 300;
+                font-size: 3rem;
+                max-width: 1000px;
+                @include tablet {
+                    font-size: 1.5rem;
+                    max-width: 512px;
+                    margin: 40px 0px;
+                }
+                @include mobileLg {
+                    font-size: 1.2rem;
+                    max-width: 307.2px;
+                    margin: 40px 0px;
+                }
+                @include mobileSm {
+                    font-size: 1.2rem;
+                    max-width: 277px;
+                    margin: 40px 0px;
+                }
+            }
+            #titleBtn {
+                padding-bottom: 40px;
                 display: flex;
                 justify-content: center;
                 flex-wrap: wrap;
-                iframe {
-                    margin: 30px 25px;
+                #btnmusic {
+                    @include mobileLg {
+                        display: none;
+                    }
+                    @include mobileSm {
+                        display: none;
+                    }
+                }
+                a {
+                    margin: 10px;
+                    @include mobileLg {
+                        font-size: 0.8rem;
+                        margin: 5px;
+                    }
+                    @include mobileSm {
+                        font-size: 0.7rem;
+                        margin: 5px;
+                    }
+                }
+            }
+        }
+        #nextDJGaleryContainer {
+            #nextDJMainTitle {
+                padding: 80px 0px 40px 0px;
+                h4 {
+                    color: grey;
+                    text-align: center;
+                    text-transform: uppercase;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 300;
+                    margin: 0px 10px;
+                }
+            }
+            #nextDJGalery {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                flex-wrap: wrap;
+                .nextDJContainer {
+                    margin-bottom: 40px;
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    max-width: 1360px;
+                    @include mobileLg {
+                        margin-bottom: 0px;
+                    }
+                    @include mobileSm {
+                        margin-bottom: 0px;
+                    }
+                    .nextDJContainerImage {
+                        img {
+                            width: 640px;
+                            height: 266px;
+                            border-radius: 20px;
+                            margin: 20px;
+                            @include tablet {
+                                width: 512px;
+                                height: 212px;
+                            }
+                            @include mobileLg {
+                                width: 307.2px;
+                                height: 127.2px;
+                                margin: 0px;
+                            }
+                            @include mobileSm {
+                                width: 277px;
+                                height: 115px;
+                                margin: 0px
+                            }
+                        }
+                    }
+                    .nextDJInfoContainer {
+                        max-width: 680px;
+                        padding: 0px 20px;
+                        @include tablet {
+                            width: 512px;
+                        }
+                        @include mobileLg {
+                            width: 321px;
+                        }
+                        .nextDJInfoHeader {
+                            display: flex;
+                            justify-content: space-between;
+                            padding-top: 20px;
+                            border-bottom: 1px solid white;
+                            .nextDJInfoName {
+                                h2 {
+                                    color: white;
+                                    font-family: 'Montserrat', sans-serif;
+                                    font-weight: 200;
+                                    @include mobileLg {
+                                        font-size: 1.4rem;
+                                    }
+                                    @include mobileSm {
+                                        font-size: 1.2rem;
+                                    }
+                                }
+                                h5 {
+                                    color: white;
+                                    font-family: 'Montserrat', sans-serif;
+                                    font-weight: 200;
+                                    @include mobileLg {
+                                        font-size: 1rem;
+                                    }
+                                    @include mobileSm {
+                                        font-size: 0.9rem;
+                                    }
+                                }
+                            }
+                            .nextDJInfoSpotify {
+                                display: flex;
+                                align-items: center;
+                                padding: 0px 20px;
+                            }
+                        }
+                        .nextDJInfoBio {
+                            height: 166px;
+                            display: flex;
+                            align-items: center;
+                            @include tablet {
+                                height: 200px;
+                            }
+                            @include mobileLg {
+                                height: 300px;
+                            }
+                            @include mobileSm {
+                                height: 300px;
+                            }
+                            p {
+                                color: grey;
+                                font-family: 'Montserrat', sans-serif;
+                                font-weight: 300;
+                                text-align: justify;
+                                @include tablet {
+                                    font-size: 1rem;
+                                }
+                                @include mobileLg {
+                                    font-size: 0.9rem;
+                                }
+                                @include mobileSm {
+                                    font-size: 0.9rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #library {
+            margin-bottom: 100px;
+            @include tablet {
+                margin-bottom: 0px;
+            }
+            @include mobileLg {
+                margin-bottom: 0px;
+            }
+            @include mobileSm {
+                margin-bottom: 0px;
+            }
+            #libraryTitle {
+                padding: 80px 0px 40px 0px;
+                h4 {
+                    color: grey;
+                    text-align: center;
+                    text-transform: uppercase;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 300;
+                    margin: 0px 10px;
+                }
+            }
+            #libraryCardContainer {
+                padding: 0px 80px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                @include mobileLg {
+                    padding: 0px 20px;
+                    margin-bottom: 30px;
+                }
+                @include mobileSm {
+                    padding: 0px 20px;
+                    margin-bottom: 30px;
+                }
+                .libraryCardBorder {
+                    width: 230px;
+                    height: 460px;
+                    border: 1px solid grey;
+                    border-radius: 22px;
+                    margin: 20px;
+                    .libraryCard {
+                        width: 200px;
+                        height: 430px;
+                        margin: 15px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        .libraryCardPortada {
+                            img {
+                                width: 200px;
+                                height: 200px;
+                                border-radius: 20px;
+                            }
+                            h6 {
+                                margin-top: 15px;
+                                color: grey;
+                                font-family: 'Montserrat', sans-serif;
+                                font-weight: bold;
+                                text-transform: uppercase;
+                                text-align: center;
+                            }
+                        }
+                        .libraryCardBody {
+                            h4 {
+                                color: white;
+                                font-family: 'Montserrat', sans-serif;
+                                font-weight: 300;
+                                font-size: 1.2rem;
+                            }
+                        }
+                        .libraryCardBtnContainer {
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 15px;
+                        }
+                    }
+                }        
+            }
+        }
+        #videoContainer {
+            display: flex;
+            justify-content: center;
+            padding-top: 80px;
+            margin-bottom: 50px;
+            @include mobileLg {
+                display: none;
+            }
+            @include mobileSm {
+                display: none;
+            }
+            iframe {
+                @include tablet {
+                    width: 470px;
+                    height: 265px;
+                }
+            }
+        }
+        #footer {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 30px 50px 0px 50px;
+            @include mobileLg {
+                flex-direction: column;
+                align-items: center;
+            }
+            @include mobileSm {
+                flex-direction: column;
+                align-items: center;
+            }
+            #footerWordsContainer {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 0px 30px;
+                h3 {
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 300;
+                    color: white;
+                    letter-spacing: 2px;
+                    @include mobileLg {
+                        text-align: center;
+                    }
+                    @include mobileSm {
+                        text-align: center;
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+            #footerLogoContainer {
+                margin: 0px 30px;
+                img {
+                    @include tablet {
+                        width: 200px;
+                        height: 200px;
+                    }
+                    @include mobileLg {
+                        width: 150px;
+                        height: 150px;
+                    }
+                    @include mobileSm {
+                        width: 100px;
+                        height: 100px;
+                    }
                 }
             }
         }
     }
 }
 
+hr {
+    color: white;
+    margin: 0px 50px;
+}

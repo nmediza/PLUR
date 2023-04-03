@@ -20,48 +20,363 @@
         margin: 30px;
         .rectangular01 {
             grid-area: rectangular01;
+            @include tablet {
+                width: 500px;
+                height: 350px;
+            }
+            @include mobileLg {
+                width: 400px;
+                height: 300px;
+            }
+            @include mobileSm {
+                width: 300px;
+                height: 200px;
+            }
         }
         .rectangular02 {
             grid-area: rectangular02;
+            @include tablet {
+                width: 250px;
+                height: 250px;
+            }
+            @include mobileLg {
+                width: 200px;
+                height: 200px;
+            }
+            @include mobileSm {
+                width: 150px;
+                height: 150px;
+            }
         }
         .rectangular03 {
             grid-area: rectangular03;
+            @include tablet {
+                width: 250px;
+                height: 250px;
+            }
+            @include mobileLg {
+                width: 200px;
+                height: 200px;
+            }
+            @include mobileSm {
+                width: 150px;
+                height: 150px;
+            }
         }
         .rectangular04 {
             grid-area: rectangular04;
+            @include tablet {
+                width: 500px;
+                height: 350px;
+            }
+            @include mobileLg {
+                width: 400px;
+                height: 300px;
+            }
+            @include mobileSm {
+                width: 300px;
+                height: 200px;
+            }
         }
         .cuadrada01 {
             grid-area: cuadrada01;
+            @include tablet {
+                width: 250px;
+                height: 250px;
+            }
+            @include mobileLg {
+                width: 200px;
+                height: 200px;
+            }
+            @include mobileSm {
+                width: 150px;
+                height: 150px;
+            }
         }
         .cuadrada02 {
             grid-area: cuadrada02;
+            @include tablet {
+                width: 250px;
+                height: 250px;
+            }
+            @include mobileLg {
+                width: 200px;
+                height: 200px;
+            }
+            @include mobileSm {
+                width: 150px;
+                height: 150px;
+            }
         }
         .cuadrada03 {
             grid-area: cuadrada03;
+            @include tablet {
+                width: 250px;
+                height: 250px;
+            }
+            @include mobileLg {
+                width: 200px;
+                height: 200px;
+            }
+            @include mobileSm {
+                width: 150px;
+                height: 150px;
+            }
         }
         .cuadrada04 {
             grid-area: cuadrada04;
+            @include tablet {
+                width: 250px;
+                height: 250px;
+            }
+            @include mobileLg {
+                width: 200px;
+                height: 200px;
+            }
+            @include mobileSm {
+                width: 150px;
+                height: 150px;
+            }
         }
         .cuadrada05 {
             grid-area: cuadrada05;
+            @include tablet {
+                width: 250px;
+                height: 250px;
+            }
+            @include mobileLg {
+                width: 200px;
+                height: 200px;
+            }
+            @include mobileSm {
+                width: 150px;
+                height: 150px;
+            }
         }
         .cuadrada06 {
             grid-area: cuadrada06;
+            @include tablet {
+                width: 250px;
+                height: 250px;
+            }
+            @include mobileLg {
+                width: 200px;
+                height: 200px;
+            }
+            @include mobileSm {
+                width: 150px;
+                height: 150px;
+            }
         }
         .cuadrada07 {
             grid-area: cuadrada07;
+            @include tablet {
+                width: 250px;
+                height: 250px;
+            }
+            @include mobileLg {
+                width: 200px;
+                height: 200px;
+            }
+            @include mobileSm {
+                width: 150px;
+                height: 150px;
+            }
         }
         .cuadrada08 {
             grid-area: cuadrada08;
+            @include tablet {
+                width: 250px;
+                height: 250px;
+            }
+            @include mobileLg {
+                width: 200px;
+                height: 200px;
+            }
+            @include mobileSm {
+                width: 150px;
+                height: 150px;
+            }
         }
         .rectangularvertical01 {
             grid-area: rectangularvertical01;
+            @include tablet {
+                width: 250px;
+                height: 500px;
+            }
+            @include mobileLg {
+                width: 200px;
+                height: 400px;
+            }
+            @include mobileSm {
+                width: 150px;
+                height: 300px;
+            }
         }
         .iframe01 {
             grid-area: iframe01;
+            @include tablet {
+                width: 500px;
+                height: 400px;
+            }
+            @include mobileLg {
+                width: 400px;
+                height: 300px;
+            }
+            @include mobileSm {
+                width: 300px;
+                height: 200px;
+            }
         }
         .iframe02 {
             grid-area: iframe02;
+            @include tablet {
+                width: 500px;
+                height: 400px;
+            }
+            @include mobileLg {
+                width: 400px;
+                height: 300px;
+            }
+            @include mobileSm {
+                width: 300px;
+                height: 200px;
+            }
+        }
+        @include tablet {
+            grid-template-columns: repeat(2, 250px);
+            grid-template-rows: repeat(60, 50px);
+            grid-template-areas:
+            "rectangular01 rectangular01"
+            "rectangular01 rectangular01"
+            "rectangular01 rectangular01"
+            "rectangular01 rectangular01"
+            "rectangular01 rectangular01"
+            "rectangular01 rectangular01"
+            "rectangular01 rectangular01"
+            "cuadrada01 cuadrada02"
+            "cuadrada01 cuadrada02"
+            "cuadrada01 cuadrada02"
+            "cuadrada01 cuadrada02"
+            "cuadrada01 cuadrada02"
+            "cuadrada03 cuadrada04"
+            "cuadrada03 cuadrada04"
+            "cuadrada03 cuadrada04"
+            "cuadrada03 cuadrada04"
+            "cuadrada03 cuadrada04"
+            "iframe01 iframe01"
+            "iframe01 iframe01"
+            "iframe01 iframe01"
+            "iframe01 iframe01"
+            "iframe01 iframe01"
+            "iframe01 iframe01"
+            "iframe01 iframe01"
+            "iframe01 iframe01"
+            "rectangular02 rectangularvertical01"
+            "rectangular02 rectangularvertical01"
+            "rectangular02 rectangularvertical01"
+            "rectangular02 rectangularvertical01"
+            "rectangular02 rectangularvertical01"
+            "rectangular03 rectangularvertical01"
+            "rectangular03 rectangularvertical01"
+            "rectangular03 rectangularvertical01"
+            "rectangular03 rectangularvertical01"
+            "rectangular03 rectangularvertical01"
+            "iframe02 iframe02"
+            "iframe02 iframe02"
+            "iframe02 iframe02"
+            "iframe02 iframe02"
+            "iframe02 iframe02"
+            "iframe02 iframe02"
+            "iframe02 iframe02"
+            "iframe02 iframe02"
+            "cuadrada05 cuadrada06"
+            "cuadrada05 cuadrada06"
+            "cuadrada05 cuadrada06"
+            "cuadrada05 cuadrada06"
+            "cuadrada05 cuadrada06"
+            "cuadrada07 cuadrada08"
+            "cuadrada07 cuadrada08"
+            "cuadrada07 cuadrada08"
+            "cuadrada07 cuadrada08"
+            "cuadrada07 cuadrada08"
+            "rectangular04 rectangular04"
+            "rectangular04 rectangular04"
+            "rectangular04 rectangular04"
+            "rectangular04 rectangular04"
+            "rectangular04 rectangular04"
+            "rectangular04 rectangular04"
+            "rectangular04 rectangular04"
+        }
+        @include mobileLg {
+            margin: 0px;
+            grid-template-columns: repeat(2, 200px);
+            grid-template-rows: repeat(24, 100px);
+            grid-template-areas:
+            "rectangular01 rectangular01"
+            "rectangular01 rectangular01"
+            "rectangular01 rectangular01"
+            "cuadrada01 cuadrada02"
+            "cuadrada01 cuadrada02"
+            "cuadrada03 cuadrada04"
+            "cuadrada03 cuadrada04"
+            "iframe01 iframe01"
+            "iframe01 iframe01"
+            "iframe01 iframe01"
+            "rectangular02 rectangularvertical01"
+            "rectangular02 rectangularvertical01"
+            "rectangular03 rectangularvertical01"
+            "rectangular03 rectangularvertical01"
+            "iframe02 iframe02"
+            "iframe02 iframe02"
+            "iframe02 iframe02"
+            "cuadrada05 cuadrada06"
+            "cuadrada05 cuadrada06"
+            "cuadrada07 cuadrada08"
+            "cuadrada07 cuadrada08"
+            "rectangular04 rectangular04"
+            "rectangular04 rectangular04"
+            "rectangular04 rectangular04"
+        }
+        @include mobileSm {
+            margin: 0px;
+            grid-template-columns: repeat(2, 150px);
+            grid-template-rows: repeat(34, 50px);
+            grid-template-areas:
+            "rectangular01 rectangular01"
+            "rectangular01 rectangular01"
+            "rectangular01 rectangular01"
+            "rectangular01 rectangular01"
+            "cuadrada01 cuadrada02"
+            "cuadrada01 cuadrada02"
+            "cuadrada01 cuadrada02"
+            "cuadrada03 cuadrada04"
+            "cuadrada03 cuadrada04"
+            "cuadrada03 cuadrada04"
+            "iframe01 iframe01"
+            "iframe01 iframe01"
+            "iframe01 iframe01"
+            "iframe01 iframe01"
+            "rectangular02 rectangularvertical01"
+            "rectangular02 rectangularvertical01"
+            "rectangular02 rectangularvertical01"
+            "rectangular03 rectangularvertical01"
+            "rectangular03 rectangularvertical01"
+            "rectangular03 rectangularvertical01"
+            "iframe02 iframe02"
+            "iframe02 iframe02"
+            "iframe02 iframe02"
+            "iframe02 iframe02"
+            "cuadrada05 cuadrada06"
+            "cuadrada05 cuadrada06"
+            "cuadrada05 cuadrada06"
+            "cuadrada07 cuadrada08"
+            "cuadrada07 cuadrada08"
+            "cuadrada07 cuadrada08"
+            "rectangular04 rectangular04"
+            "rectangular04 rectangular04"
+            "rectangular04 rectangular04"
+            "rectangular04 rectangular04"
         }
     }
 }
