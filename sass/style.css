@@ -376,7 +376,7 @@
 #bodyIndex #main #footer #footerWordsContainer h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  color: white;
+  color: grey;
   letter-spacing: 2px;
 }
 @media only screen and (min-width: 321px) and (max-width: 576px) {
@@ -417,54 +417,55 @@ hr {
   margin: 0px 50px;
 }
 
-#eventos {
+#bodyEventos {
+  /* background-color: #212529; */
+}
+#bodyEventos #eventos {
   margin: 66px 30px 30px 30px;
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-  #eventos {
+  #bodyEventos #eventos {
     margin: 66px 0px;
   }
 }
-#eventos #eventosGrilla {
+#bodyEventos #eventos #eventosGrilla {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-  #eventos #eventosGrilla {
+  #bodyEventos #eventos #eventosGrilla {
     flex-direction: column;
     align-items: center;
   }
 }
-#eventos #eventosGrilla .flyercontainer {
+#bodyEventos #eventos #eventosGrilla .flyercontainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
 }
-#eventos #eventosGrilla .flyercontainer .eventosFlyer {
+#bodyEventos #eventos #eventosGrilla .flyercontainer .eventosFlyer {
   margin-bottom: 20px;
   filter: grayscale(100%);
 }
 @media only screen and (min-width: 321px) and (max-width: 576px) {
-  #eventos #eventosGrilla .flyercontainer .eventosFlyer {
+  #bodyEventos #eventos #eventosGrilla .flyercontainer .eventosFlyer {
     width: 300px;
     height: 300px;
   }
 }
 @media only screen and (max-width: 320px) {
-  #eventos #eventosGrilla .flyercontainer .eventosFlyer {
+  #bodyEventos #eventos #eventosGrilla .flyercontainer .eventosFlyer {
     width: 250px;
     height: 250px;
   }
 }
-#eventos #eventosGrilla .flyercontainer .eventosFlyer:hover {
+#bodyEventos #eventos #eventosGrilla .flyercontainer .eventosFlyer:hover {
   filter: grayscale(0%);
   transition: 0s;
 }
-
-/* MODAL EVENTOS */
-.modal-body .eventosNombreYProductora {
+#bodyEventos #eventos .modal-body .eventosNombreYProductora {
   display: flex;
   flex-wrap: wrap;
   padding: 0px 30px;
@@ -473,7 +474,7 @@ hr {
   align-items: center;
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-  .modal-body .eventosNombreYProductora div {
+  #bodyEventos #eventos .modal-body .eventosNombreYProductora div {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -481,7 +482,7 @@ hr {
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 576px) {
-  .modal-body .eventosNombreYProductora div {
+  #bodyEventos #eventos .modal-body .eventosNombreYProductora div {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -489,7 +490,7 @@ hr {
   }
 }
 @media only screen and (max-width: 320px) {
-  .modal-body .eventosNombreYProductora div {
+  #bodyEventos #eventos .modal-body .eventosNombreYProductora div {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -497,38 +498,37 @@ hr {
   }
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-  .modal-body .eventosNombreYProductora {
+  #bodyEventos #eventos .modal-body .eventosNombreYProductora {
     padding: 0px;
     flex-direction: column;
     align-items: center;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 576px) {
-  .modal-body .eventosNombreYProductora {
+  #bodyEventos #eventos .modal-body .eventosNombreYProductora {
     padding: 0px;
     flex-direction: column;
     align-items: center;
   }
 }
 @media only screen and (max-width: 320px) {
-  .modal-body .eventosNombreYProductora {
+  #bodyEventos #eventos .modal-body .eventosNombreYProductora {
     padding: 0px;
     flex-direction: column;
     align-items: center;
   }
 }
-.modal-body .eventosNombreYProductora h2 {
+#bodyEventos #eventos .modal-body .eventosNombreYProductora h2 {
   font-size: 3rem;
   font-weight: 300;
 }
-
-.LineUp {
+#bodyEventos #eventos .modal-body .LineUp {
   display: flex;
   margin-top: 20px;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.LineUp .LineUpDJContainer {
+#bodyEventos #eventos .modal-body .LineUp .LineUpDJContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -536,58 +536,57 @@ hr {
   margin-top: 40px;
   width: 400px;
 }
-.LineUp .LineUpDJContainer .fotodj {
+#bodyEventos #eventos .modal-body .LineUp .LineUpDJContainer .fotodj {
   border-radius: 50%;
 }
-.LineUp .LineUpDJContainer .LineUpDJinfo h4 {
+#bodyEventos #eventos .modal-body .LineUp .LineUpDJContainer .LineUpDJinfo h4 {
   margin-top: 20px;
   text-align: center;
 }
-.LineUp .LineUpDJContainer .LineUpDJinfo p {
+#bodyEventos #eventos .modal-body .LineUp .LineUpDJContainer .LineUpDJinfo p {
   padding: 20px 0px;
   text-align: justify;
   color: grey;
   font-size: 0.8rem;
 }
-
-.eventosInfo {
+#bodyEventos #eventos .modal-body .eventosInfo {
   display: flex;
   justify-content: space-evenly;
   padding-top: 50px;
 }
-.eventosInfo h5 {
+#bodyEventos #eventos .modal-body .eventosInfo h5 {
   text-align: center;
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-  .eventosInfo h5 {
+  #bodyEventos #eventos .modal-body .eventosInfo h5 {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 576px) {
-  .eventosInfo h5 {
+  #bodyEventos #eventos .modal-body .eventosInfo h5 {
     font-size: 1rem;
   }
 }
 @media only screen and (max-width: 320px) {
-  .eventosInfo h5 {
+  #bodyEventos #eventos .modal-body .eventosInfo h5 {
     font-size: 1rem;
   }
 }
-.eventosInfo h6 {
+#bodyEventos #eventos .modal-body .eventosInfo h6 {
   text-align: center;
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-  .eventosInfo h6 {
+  #bodyEventos #eventos .modal-body .eventosInfo h6 {
     font-size: 0.8rem;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 576px) {
-  .eventosInfo h6 {
+  #bodyEventos #eventos .modal-body .eventosInfo h6 {
     font-size: 0.8rem;
   }
 }
 @media only screen and (max-width: 320px) {
-  .eventosInfo h6 {
+  #bodyEventos #eventos .modal-body .eventosInfo h6 {
     font-size: 0.8rem;
   }
 }
@@ -670,341 +669,341 @@ hr {
   margin-top: 20px;
 }
 
-.galeriacontainer {
+#bodyGaleria .galeriaMain .galeriacontainer {
   display: flex;
   justify-content: center;
 }
-.galeriacontainer #galeria {
+#bodyGaleria .galeriaMain .galeriacontainer #galeria {
   display: grid;
   grid-template-columns: repeat(4, 300px);
   grid-template-rows: repeat(11, 300px);
   grid-template-areas: "rectangular01 rectangular01 rectangular01 cuadrada01" "rectangular01 rectangular01 rectangular01 cuadrada02" "cuadrada03 iframe01 iframe01 iframe01" "cuadrada04 iframe01 iframe01 iframe01" "rectangular02 rectangular02 rectangular03 rectangular03" "rectangular02 rectangular02 rectangular03 rectangular03" "iframe02 iframe02 iframe02 rectangularvertical01" "iframe02 iframe02 iframe02 rectangularvertical01" "cuadrada05 cuadrada06 cuadrada07 cuadrada08" "rectangular04 rectangular04 rectangular04 rectangular04" "rectangular04 rectangular04 rectangular04 rectangular04";
   margin: 30px;
 }
-.galeriacontainer #galeria .rectangular01 {
+#bodyGaleria .galeriaMain .galeriacontainer #galeria .rectangular01 {
   grid-area: rectangular01;
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-  .galeriacontainer #galeria .rectangular01 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .rectangular01 {
     width: 500px;
     height: 350px;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 576px) {
-  .galeriacontainer #galeria .rectangular01 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .rectangular01 {
     width: 400px;
     height: 300px;
   }
 }
 @media only screen and (max-width: 320px) {
-  .galeriacontainer #galeria .rectangular01 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .rectangular01 {
     width: 300px;
     height: 200px;
   }
 }
-.galeriacontainer #galeria .rectangular02 {
+#bodyGaleria .galeriaMain .galeriacontainer #galeria .rectangular02 {
   grid-area: rectangular02;
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-  .galeriacontainer #galeria .rectangular02 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .rectangular02 {
     width: 250px;
     height: 250px;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 576px) {
-  .galeriacontainer #galeria .rectangular02 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .rectangular02 {
     width: 200px;
     height: 200px;
   }
 }
 @media only screen and (max-width: 320px) {
-  .galeriacontainer #galeria .rectangular02 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .rectangular02 {
     width: 150px;
     height: 150px;
   }
 }
-.galeriacontainer #galeria .rectangular03 {
+#bodyGaleria .galeriaMain .galeriacontainer #galeria .rectangular03 {
   grid-area: rectangular03;
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-  .galeriacontainer #galeria .rectangular03 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .rectangular03 {
     width: 250px;
     height: 250px;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 576px) {
-  .galeriacontainer #galeria .rectangular03 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .rectangular03 {
     width: 200px;
     height: 200px;
   }
 }
 @media only screen and (max-width: 320px) {
-  .galeriacontainer #galeria .rectangular03 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .rectangular03 {
     width: 150px;
     height: 150px;
   }
 }
-.galeriacontainer #galeria .rectangular04 {
+#bodyGaleria .galeriaMain .galeriacontainer #galeria .rectangular04 {
   grid-area: rectangular04;
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-  .galeriacontainer #galeria .rectangular04 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .rectangular04 {
     width: 500px;
     height: 350px;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 576px) {
-  .galeriacontainer #galeria .rectangular04 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .rectangular04 {
     width: 400px;
     height: 300px;
   }
 }
 @media only screen and (max-width: 320px) {
-  .galeriacontainer #galeria .rectangular04 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .rectangular04 {
     width: 300px;
     height: 200px;
   }
 }
-.galeriacontainer #galeria .cuadrada01 {
+#bodyGaleria .galeriaMain .galeriacontainer #galeria .cuadrada01 {
   grid-area: cuadrada01;
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-  .galeriacontainer #galeria .cuadrada01 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .cuadrada01 {
     width: 250px;
     height: 250px;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 576px) {
-  .galeriacontainer #galeria .cuadrada01 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .cuadrada01 {
     width: 200px;
     height: 200px;
   }
 }
 @media only screen and (max-width: 320px) {
-  .galeriacontainer #galeria .cuadrada01 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .cuadrada01 {
     width: 150px;
     height: 150px;
   }
 }
-.galeriacontainer #galeria .cuadrada02 {
+#bodyGaleria .galeriaMain .galeriacontainer #galeria .cuadrada02 {
   grid-area: cuadrada02;
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-  .galeriacontainer #galeria .cuadrada02 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .cuadrada02 {
     width: 250px;
     height: 250px;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 576px) {
-  .galeriacontainer #galeria .cuadrada02 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .cuadrada02 {
     width: 200px;
     height: 200px;
   }
 }
 @media only screen and (max-width: 320px) {
-  .galeriacontainer #galeria .cuadrada02 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .cuadrada02 {
     width: 150px;
     height: 150px;
   }
 }
-.galeriacontainer #galeria .cuadrada03 {
+#bodyGaleria .galeriaMain .galeriacontainer #galeria .cuadrada03 {
   grid-area: cuadrada03;
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-  .galeriacontainer #galeria .cuadrada03 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .cuadrada03 {
     width: 250px;
     height: 250px;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 576px) {
-  .galeriacontainer #galeria .cuadrada03 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .cuadrada03 {
     width: 200px;
     height: 200px;
   }
 }
 @media only screen and (max-width: 320px) {
-  .galeriacontainer #galeria .cuadrada03 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .cuadrada03 {
     width: 150px;
     height: 150px;
   }
 }
-.galeriacontainer #galeria .cuadrada04 {
+#bodyGaleria .galeriaMain .galeriacontainer #galeria .cuadrada04 {
   grid-area: cuadrada04;
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-  .galeriacontainer #galeria .cuadrada04 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .cuadrada04 {
     width: 250px;
     height: 250px;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 576px) {
-  .galeriacontainer #galeria .cuadrada04 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .cuadrada04 {
     width: 200px;
     height: 200px;
   }
 }
 @media only screen and (max-width: 320px) {
-  .galeriacontainer #galeria .cuadrada04 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .cuadrada04 {
     width: 150px;
     height: 150px;
   }
 }
-.galeriacontainer #galeria .cuadrada05 {
+#bodyGaleria .galeriaMain .galeriacontainer #galeria .cuadrada05 {
   grid-area: cuadrada05;
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-  .galeriacontainer #galeria .cuadrada05 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .cuadrada05 {
     width: 250px;
     height: 250px;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 576px) {
-  .galeriacontainer #galeria .cuadrada05 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .cuadrada05 {
     width: 200px;
     height: 200px;
   }
 }
 @media only screen and (max-width: 320px) {
-  .galeriacontainer #galeria .cuadrada05 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .cuadrada05 {
     width: 150px;
     height: 150px;
   }
 }
-.galeriacontainer #galeria .cuadrada06 {
+#bodyGaleria .galeriaMain .galeriacontainer #galeria .cuadrada06 {
   grid-area: cuadrada06;
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-  .galeriacontainer #galeria .cuadrada06 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .cuadrada06 {
     width: 250px;
     height: 250px;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 576px) {
-  .galeriacontainer #galeria .cuadrada06 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .cuadrada06 {
     width: 200px;
     height: 200px;
   }
 }
 @media only screen and (max-width: 320px) {
-  .galeriacontainer #galeria .cuadrada06 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .cuadrada06 {
     width: 150px;
     height: 150px;
   }
 }
-.galeriacontainer #galeria .cuadrada07 {
+#bodyGaleria .galeriaMain .galeriacontainer #galeria .cuadrada07 {
   grid-area: cuadrada07;
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-  .galeriacontainer #galeria .cuadrada07 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .cuadrada07 {
     width: 250px;
     height: 250px;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 576px) {
-  .galeriacontainer #galeria .cuadrada07 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .cuadrada07 {
     width: 200px;
     height: 200px;
   }
 }
 @media only screen and (max-width: 320px) {
-  .galeriacontainer #galeria .cuadrada07 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .cuadrada07 {
     width: 150px;
     height: 150px;
   }
 }
-.galeriacontainer #galeria .cuadrada08 {
+#bodyGaleria .galeriaMain .galeriacontainer #galeria .cuadrada08 {
   grid-area: cuadrada08;
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-  .galeriacontainer #galeria .cuadrada08 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .cuadrada08 {
     width: 250px;
     height: 250px;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 576px) {
-  .galeriacontainer #galeria .cuadrada08 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .cuadrada08 {
     width: 200px;
     height: 200px;
   }
 }
 @media only screen and (max-width: 320px) {
-  .galeriacontainer #galeria .cuadrada08 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .cuadrada08 {
     width: 150px;
     height: 150px;
   }
 }
-.galeriacontainer #galeria .rectangularvertical01 {
+#bodyGaleria .galeriaMain .galeriacontainer #galeria .rectangularvertical01 {
   grid-area: rectangularvertical01;
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-  .galeriacontainer #galeria .rectangularvertical01 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .rectangularvertical01 {
     width: 250px;
     height: 500px;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 576px) {
-  .galeriacontainer #galeria .rectangularvertical01 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .rectangularvertical01 {
     width: 200px;
     height: 400px;
   }
 }
 @media only screen and (max-width: 320px) {
-  .galeriacontainer #galeria .rectangularvertical01 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .rectangularvertical01 {
     width: 150px;
     height: 300px;
   }
 }
-.galeriacontainer #galeria .iframe01 {
+#bodyGaleria .galeriaMain .galeriacontainer #galeria .iframe01 {
   grid-area: iframe01;
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-  .galeriacontainer #galeria .iframe01 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .iframe01 {
     width: 500px;
     height: 400px;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 576px) {
-  .galeriacontainer #galeria .iframe01 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .iframe01 {
     width: 400px;
     height: 300px;
   }
 }
 @media only screen and (max-width: 320px) {
-  .galeriacontainer #galeria .iframe01 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .iframe01 {
     width: 300px;
     height: 200px;
   }
 }
-.galeriacontainer #galeria .iframe02 {
+#bodyGaleria .galeriaMain .galeriacontainer #galeria .iframe02 {
   grid-area: iframe02;
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-  .galeriacontainer #galeria .iframe02 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .iframe02 {
     width: 500px;
     height: 400px;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 576px) {
-  .galeriacontainer #galeria .iframe02 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .iframe02 {
     width: 400px;
     height: 300px;
   }
 }
 @media only screen and (max-width: 320px) {
-  .galeriacontainer #galeria .iframe02 {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria .iframe02 {
     width: 300px;
     height: 200px;
   }
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-  .galeriacontainer #galeria {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria {
     grid-template-columns: repeat(2, 250px);
     grid-template-rows: repeat(60, 50px);
     grid-template-areas: "rectangular01 rectangular01" "rectangular01 rectangular01" "rectangular01 rectangular01" "rectangular01 rectangular01" "rectangular01 rectangular01" "rectangular01 rectangular01" "rectangular01 rectangular01" "cuadrada01 cuadrada02" "cuadrada01 cuadrada02" "cuadrada01 cuadrada02" "cuadrada01 cuadrada02" "cuadrada01 cuadrada02" "cuadrada03 cuadrada04" "cuadrada03 cuadrada04" "cuadrada03 cuadrada04" "cuadrada03 cuadrada04" "cuadrada03 cuadrada04" "iframe01 iframe01" "iframe01 iframe01" "iframe01 iframe01" "iframe01 iframe01" "iframe01 iframe01" "iframe01 iframe01" "iframe01 iframe01" "iframe01 iframe01" "rectangular02 rectangularvertical01" "rectangular02 rectangularvertical01" "rectangular02 rectangularvertical01" "rectangular02 rectangularvertical01" "rectangular02 rectangularvertical01" "rectangular03 rectangularvertical01" "rectangular03 rectangularvertical01" "rectangular03 rectangularvertical01" "rectangular03 rectangularvertical01" "rectangular03 rectangularvertical01" "iframe02 iframe02" "iframe02 iframe02" "iframe02 iframe02" "iframe02 iframe02" "iframe02 iframe02" "iframe02 iframe02" "iframe02 iframe02" "iframe02 iframe02" "cuadrada05 cuadrada06" "cuadrada05 cuadrada06" "cuadrada05 cuadrada06" "cuadrada05 cuadrada06" "cuadrada05 cuadrada06" "cuadrada07 cuadrada08" "cuadrada07 cuadrada08" "cuadrada07 cuadrada08" "cuadrada07 cuadrada08" "cuadrada07 cuadrada08" "rectangular04 rectangular04" "rectangular04 rectangular04" "rectangular04 rectangular04" "rectangular04 rectangular04" "rectangular04 rectangular04" "rectangular04 rectangular04" "rectangular04 rectangular04";
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 576px) {
-  .galeriacontainer #galeria {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria {
     margin: 0px;
     grid-template-columns: repeat(2, 200px);
     grid-template-rows: repeat(24, 100px);
@@ -1012,7 +1011,7 @@ hr {
   }
 }
 @media only screen and (max-width: 320px) {
-  .galeriacontainer #galeria {
+  #bodyGaleria .galeriaMain .galeriacontainer #galeria {
     margin: 0px;
     grid-template-columns: repeat(2, 150px);
     grid-template-rows: repeat(34, 50px);
@@ -1039,9 +1038,29 @@ hr {
   font-weight: bolder;
   letter-spacing: 15px;
 }
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .mainNosotros .nosotroscontainer .nosotrosTitulo h1 {
+    font-size: 10rem;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 576px) {
+  .mainNosotros .nosotroscontainer .nosotrosTitulo h1 {
+    font-size: 6rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .mainNosotros .nosotroscontainer .nosotrosTitulo h1 {
+    font-size: 5rem;
+  }
+}
 .mainNosotros .nosotroscontainer .nosotrosTitulo h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
+}
+@media only screen and (max-width: 320px) {
+  .mainNosotros .nosotroscontainer .nosotrosTitulo h3 {
+    font-size: 1.2rem;
+  }
 }
 .mainNosotros .nosotroscontainer .nosotrosPLUR {
   display: flex;
@@ -1057,12 +1076,36 @@ hr {
 .mainNosotros .nosotroscontainer .nosotrosPLUR .nosotrosPLURIconos .nosotrosPLURIconosContianer img {
   padding: 20px;
 }
+@media only screen and (min-width: 321px) and (max-width: 576px) {
+  .mainNosotros .nosotroscontainer .nosotrosPLUR .nosotrosPLURIconos .nosotrosPLURIconosContianer img {
+    width: 140px;
+    height: 140px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .mainNosotros .nosotroscontainer .nosotrosPLUR .nosotrosPLURIconos .nosotrosPLURIconosContianer img {
+    width: 140px;
+    height: 140px;
+  }
+}
 .mainNosotros .nosotroscontainer .nosotrosPLUR .nosotrosPLURText p {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   text-align: justify;
   padding: 50px;
   max-width: 600px;
+}
+@media only screen and (min-width: 321px) and (max-width: 576px) {
+  .mainNosotros .nosotroscontainer .nosotrosPLUR .nosotrosPLURText p {
+    font-size: 0.9rem;
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .mainNosotros .nosotroscontainer .nosotrosPLUR .nosotrosPLURText p {
+    font-size: 0.9rem;
+    padding: 15px;
+  }
 }
 .mainNosotros .nosotroscontainer .nosotrosAboutUsContainer {
   display: flex;
@@ -1086,6 +1129,30 @@ hr {
   padding: 50px;
   max-width: 600px;
 }
+@media only screen and (min-width: 321px) and (max-width: 576px) {
+  .mainNosotros .nosotroscontainer .nosotrosAboutUsContainer .aboutUsYBotonContacto p {
+    font-size: 0.9rem;
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .mainNosotros .nosotroscontainer .nosotrosAboutUsContainer .aboutUsYBotonContacto p {
+    font-size: 0.9rem;
+    padding: 15px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 576px) {
+  .mainNosotros .nosotroscontainer .nosotrosAboutUsContainer .AboutUsLogo img {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .mainNosotros .nosotroscontainer .nosotrosAboutUsContainer .AboutUsLogo img {
+    width: 250px;
+    height: 250px;
+  }
+}
 
 /* VARIABLES */
 /* ESTILOS GENERALES */
@@ -1100,56 +1167,4 @@ body {
 
 #main {
   margin-top: 66px;
-}
-
-/* TABLET
-    Nosotros
-    .nosotrosTitulo h1 {
-        font-size: 9rem;
-    }
-    .nosotrosTitulo h3 {
-        font-size: 2rem;
-    }
-}
-
-MOBILE 321px a 576px
-    Nosotros
-    .nosotrosTitulo h1 {
-        font-size: 5rem;
-    }
-    .nosotrosTitulo h3 {
-        font-size: 1.5rem;
-    }
-    .nosotrosPLURIconos div img {
-        width: 150px;
-        height: 150px;
-    }
-    .nosotrosPLUR div p, .aboutUsYBotonContacto div p {
-        font-size: 0.9rem;
-    }
-    .AboutUsLogo img {
-        width: 250px;
-        height: 250px;
-    }
-}
-
-MOBILE 320px
-    Nosotros
-    .nosotrosTitulo h1 {
-        font-size: 4rem;
-    }
-    .nosotrosTitulo h3 {
-        font-size: 1rem;
-    }
-    .nosotrosPLURIconos div img {
-        width: 150px;
-        height: 150px;
-    }
-    .nosotrosPLUR div p, .aboutUsYBotonContacto div p {
-        font-size: 0.9rem;
-    }
-    .AboutUsLogo img {
-        width: 250px;
-        height: 250px;
-    }
-} *//*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

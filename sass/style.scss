@@ -6,7 +6,7 @@
 @import 'nosotros';
 
 /* VARIABLES */
-$mainColor: #212529;
+$main-color: #212529;
 
 /* ESTILOS GENERALES */
 
@@ -24,56 +24,3 @@ body {
 #main {
     margin-top: 66px;
 }
-
-
-/* TABLET
-    Nosotros
-    .nosotrosTitulo h1 {
-        font-size: 9rem;
-    }
-    .nosotrosTitulo h3 {
-        font-size: 2rem;
-    }
-}
-
-MOBILE 321px a 576px
-    Nosotros
-    .nosotrosTitulo h1 {
-        font-size: 5rem;
-    }
-    .nosotrosTitulo h3 {
-        font-size: 1.5rem;
-    }
-    .nosotrosPLURIconos div img {
-        width: 150px;
-        height: 150px;
-    }
-    .nosotrosPLUR div p, .aboutUsYBotonContacto div p {
-        font-size: 0.9rem;
-    }
-    .AboutUsLogo img {
-        width: 250px;
-        height: 250px;
-    }
-}
-
-MOBILE 320px
-    Nosotros
-    .nosotrosTitulo h1 {
-        font-size: 4rem;
-    }
-    .nosotrosTitulo h3 {
-        font-size: 1rem;
-    }
-    .nosotrosPLURIconos div img {
-        width: 150px;
-        height: 150px;
-    }
-    .nosotrosPLUR div p, .aboutUsYBotonContacto div p {
-        font-size: 0.9rem;
-    }
-    .AboutUsLogo img {
-        width: 250px;
-        height: 250px;
-    }
-} */

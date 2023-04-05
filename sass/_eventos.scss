@@ -1,152 +1,150 @@
-#eventos {
-    margin: 66px 30px 30px 30px;
-    @include tablet {
-        margin: 66px 0px;
-    }
-    #eventosGrilla {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+#bodyEventos {
+    /* background-color: #212529; */
+    #eventos {
+        margin: 66px 30px 30px 30px;
         @include tablet {
-            flex-direction: column;
-            align-items: center;
+            margin: 66px 0px;
         }
-        .flyercontainer {
+        #eventosGrilla {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 30px;
-            .eventosFlyer {
-                margin-bottom: 20px;
-                filter: grayscale(100%);
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            @include tablet {
+                flex-direction: column;
+                align-items: center;
+            }
+            .flyercontainer {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 30px;
+                .eventosFlyer {
+                    margin-bottom: 20px;
+                    filter: grayscale(100%);
+                    @include mobileLg {
+                        width: 300px;
+                        height: 300px;
+                    }
+                    @include mobileSm {
+                        width: 250px;
+                        height: 250px;
+                    }
+                }
+                .eventosFlyer:hover {
+                    filter: grayscale(0%);
+                    transition: 0s;
+                } 
+            }
+        }
+        .modal-body {
+            .eventosNombreYProductora {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0px 30px;
+                padding-top: 20px;
+                justify-content: space-between;
+                align-items: center;
+                div {
+                    @include tablet {
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        align-items: center;
+                    }
+                    @include mobileLg {
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        align-items: center;
+                    }
+                    @include mobileSm {
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        align-items: center;
+                    }
+                }
+                @include tablet {
+                    padding: 0px;
+                    flex-direction: column;
+                    align-items: center;
+                }
                 @include mobileLg {
-                    width: 300px;
-                    height: 300px;
+                    padding: 0px;
+                    flex-direction: column;
+                    align-items: center;
                 }
                 @include mobileSm {
-                    width: 250px;
-                    height: 250px;
+                    padding: 0px;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                h2 {
+                    font-size: 3rem;
+                    font-weight: 300;
                 }
             }
-            .eventosFlyer:hover {
-                filter: grayscale(0%);
-                transition: 0s;
-            } 
-        }
-    }
-}
-
-/* MODAL EVENTOS */
-
-.modal-body {
-    .eventosNombreYProductora {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0px 30px;
-        padding-top: 20px;
-        justify-content: space-between;
-        align-items: center;
-        div {
-            @include tablet {
+            .LineUp {
                 display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                align-items: center;
-            }
-            @include mobileLg {
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                align-items: center;
-            }
-            @include mobileSm {
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                align-items: center;
-            }
-        }
-        @include tablet {
-            padding: 0px;
-            flex-direction: column;
-            align-items: center;
-        }
-        @include mobileLg {
-            padding: 0px;
-            flex-direction: column;
-            align-items: center;
-        }
-        @include mobileSm {
-            padding: 0px;
-            flex-direction: column;
-            align-items: center;
-        }
-        h2 {
-            font-size: 3rem;
-            font-weight: 300;
-        }
-    }
-}
-
-
-.LineUp {
-    display: flex;
-    margin-top: 20px;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    .LineUpDJContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0px 20px;
-        margin-top: 40px;
-        width: 400px;
-        .fotodj {
-            border-radius: 50%;
-        }
-        .LineUpDJinfo {
-            h4 {
                 margin-top: 20px;
-                text-align: center;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                .LineUpDJContainer {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 0px 20px;
+                    margin-top: 40px;
+                    width: 400px;
+                    .fotodj {
+                        border-radius: 50%;
+                    }
+                    .LineUpDJinfo {
+                        h4 {
+                            margin-top: 20px;
+                            text-align: center;
+                        }
+                        p {
+                            padding: 20px 0px;
+                            text-align: justify;
+                            color: grey;
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
             }
-            p {
-                padding: 20px 0px;
-                text-align: justify;
-                color: grey;
-                font-size: 0.8rem;
-            }
+            .eventosInfo {
+                display: flex;
+                justify-content: space-evenly;
+                padding-top: 50px;
+                h5 {
+                    text-align: center;
+                    @include tablet {
+                        font-size: 1rem;
+                    }
+                    @include mobileLg {
+                        font-size: 1rem;
+                    }
+                    @include mobileSm {
+                        font-size: 1rem;
+                    }
+                }
+                h6 {
+                    text-align: center;
+                    @include tablet {
+                        font-size: 0.8rem;
+                    }
+                    @include mobileLg {
+                        font-size: 0.8rem;
+                    }
+                    @include mobileSm {
+                        font-size: 0.8rem;
+                    }
+                }
+            }    
         }
     }
 }
 
 
-.eventosInfo {
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 50px;
-    h5 {
-        text-align: center;
-        @include tablet {
-            font-size: 1rem;
-        }
-        @include mobileLg {
-            font-size: 1rem;
-        }
-        @include mobileSm {
-            font-size: 1rem;
-        }
-    }
-    h6 {
-        text-align: center;
-        @include tablet {
-            font-size: 0.8rem;
-        }
-        @include mobileLg {
-            font-size: 0.8rem;
-        }
-        @include mobileSm {
-            font-size: 0.8rem;
-        }
-    }
-}
 

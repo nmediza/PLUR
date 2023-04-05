@@ -13,10 +13,22 @@
                 font-size: 13rem;
                 font-weight: bolder;
                 letter-spacing: 15px;
+                @include tablet {
+                    font-size: 10rem;
+                }
+                @include mobileLg {
+                    font-size: 6rem;
+                }
+                @include mobileSm {
+                    font-size: 5rem;
+                }
             }
             h3 {
                 font-family: 'Montserrat', sans-serif;
                 font-weight: bold;
+                @include mobileSm {
+                    font-size: 1.2rem;
+                }
             }
         }
         .nosotrosPLUR {
@@ -31,6 +43,14 @@
                 .nosotrosPLURIconosContianer {
                     img {
                         padding: 20px;
+                        @include mobileLg {
+                            width: 140px;
+                            height: 140px;
+                        }
+                        @include mobileSm {
+                            width: 140px;
+                            height: 140px;
+                        }
                     }    
                 }           
             }
@@ -40,7 +60,15 @@
                     font-weight: 400;
                     text-align: justify;
                     padding: 50px;
-                    max-width: 600px; 
+                    max-width: 600px;
+                    @include mobileLg {
+                        font-size: 0.9rem;
+                        padding: 20px;
+                    }
+                    @include mobileSm {
+                        font-size: 0.9rem;
+                        padding: 15px;
+                    }
                 }
             }
         }
@@ -63,6 +91,26 @@
                     text-align: justify;
                     padding: 50px;
                     max-width: 600px;
+                    @include mobileLg {
+                        font-size: 0.9rem;
+                        padding: 20px;
+                    }
+                    @include mobileSm {
+                        font-size: 0.9rem;
+                        padding: 15px;
+                    }
+                }
+            }
+            .AboutUsLogo {
+                img {
+                    @include mobileLg {
+                        width: 300px;
+                        height: 300px;
+                    }
+                    @include mobileSm {
+                        width: 250px;
+                        height: 250px;
+                    }
                 }
             }
         }
