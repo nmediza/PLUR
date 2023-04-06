@@ -382,6 +382,12 @@
                 }
             }
         }
+    }
+    @include mobileLg {
+        background-color: $main-color;
+    }
+    @include mobileSm {
+        background-color: $main-color;
     }  
 }
 

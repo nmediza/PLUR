@@ -1,5 +1,5 @@
 #bodyIndex {
-    background-color:  #212529;
+    background-color:  $main-color;
     #main {
         #titleContainer {
             display: flex;
@@ -19,7 +19,6 @@
                 margin: 70px 0px;
                 color: white;
                 text-align: center;
-                font-family: 'Montserrat', sans-serif;
                 font-weight: 300;
                 font-size: 3rem;
                 max-width: 1000px;
@@ -72,7 +71,6 @@
                     color: grey;
                     text-align: center;
                     text-transform: uppercase;
-                    font-family: 'Montserrat', sans-serif;
                     font-weight: 300;
                     margin: 0px 10px;
                 }
@@ -134,7 +132,6 @@
                             .nextDJInfoName {
                                 h2 {
                                     color: white;
-                                    font-family: 'Montserrat', sans-serif;
                                     font-weight: 200;
                                     @include mobileLg {
                                         font-size: 1.4rem;
@@ -145,7 +142,6 @@
                                 }
                                 h5 {
                                     color: white;
-                                    font-family: 'Montserrat', sans-serif;
                                     font-weight: 200;
                                     @include mobileLg {
                                         font-size: 1rem;
@@ -176,7 +172,6 @@
                             }
                             p {
                                 color: grey;
-                                font-family: 'Montserrat', sans-serif;
                                 font-weight: 300;
                                 text-align: justify;
                                 @include tablet {
@@ -211,7 +206,6 @@
                     color: grey;
                     text-align: center;
                     text-transform: uppercase;
-                    font-family: 'Montserrat', sans-serif;
                     font-weight: 300;
                     margin: 0px 10px;
                 }
@@ -251,7 +245,6 @@
                             h6 {
                                 margin-top: 15px;
                                 color: grey;
-                                font-family: 'Montserrat', sans-serif;
                                 font-weight: bold;
                                 text-transform: uppercase;
                                 text-align: center;
@@ -260,7 +253,6 @@
                         .libraryCardBody {
                             h4 {
                                 color: white;
-                                font-family: 'Montserrat', sans-serif;
                                 font-weight: 300;
                                 font-size: 1.2rem;
                             }
@@ -311,7 +303,6 @@
                 justify-content: center;
                 margin: 0px 30px;
                 h3 {
-                    font-family: 'Montserrat', sans-serif;
                     font-weight: 300;
                     color: grey;
                     letter-spacing: 2px;

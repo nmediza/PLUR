@@ -1,3 +1,8 @@
+/* VARIABLES */
+$main-color: #212529;
+$main-font: 'Montserrat', sans-serif;
+$second-font: sans-serif;
+
 @import 'media-queries';
 @import 'index';
 @import 'eventos';
@@ -5,12 +10,11 @@
 @import 'galeria';
 @import 'nosotros';
 
-/* VARIABLES */
-$main-color: #212529;
 
 /* ESTILOS GENERALES */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
+
 
 * {
     padding: 0;
@@ -18,7 +22,7 @@ $main-color: #212529;
 }
 
 body {
-    font-family: sans-serif;
+    font-family: $main-font;
 }
 
 #main {

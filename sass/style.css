@@ -1,3 +1,4 @@
+/* VARIABLES */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap");
 #bodyIndex {
   background-color: #212529;
@@ -27,7 +28,6 @@
   margin: 70px 0px;
   color: white;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 3rem;
   max-width: 1000px;
@@ -91,7 +91,6 @@
   color: grey;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   margin: 0px 10px;
 }
@@ -167,7 +166,6 @@
 }
 #bodyIndex #main #nextDJGaleryContainer #nextDJGalery .nextDJContainer .nextDJInfoContainer .nextDJInfoHeader .nextDJInfoName h2 {
   color: white;
-  font-family: "Montserrat", sans-serif;
   font-weight: 200;
 }
 @media only screen and (min-width: 321px) and (max-width: 576px) {
@@ -182,7 +180,6 @@
 }
 #bodyIndex #main #nextDJGaleryContainer #nextDJGalery .nextDJContainer .nextDJInfoContainer .nextDJInfoHeader .nextDJInfoName h5 {
   color: white;
-  font-family: "Montserrat", sans-serif;
   font-weight: 200;
 }
 @media only screen and (min-width: 321px) and (max-width: 576px) {
@@ -222,7 +219,6 @@
 }
 #bodyIndex #main #nextDJGaleryContainer #nextDJGalery .nextDJContainer .nextDJInfoContainer .nextDJInfoBio p {
   color: grey;
-  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   text-align: justify;
 }
@@ -266,7 +262,6 @@
   color: grey;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   margin: 0px 10px;
 }
@@ -311,14 +306,12 @@
 #bodyIndex #main #library #libraryCardContainer .libraryCardBorder .libraryCard .libraryCardPortada h6 {
   margin-top: 15px;
   color: grey;
-  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
 }
 #bodyIndex #main #library #libraryCardContainer .libraryCardBorder .libraryCard .libraryCardBody h4 {
   color: white;
-  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 1.2rem;
 }
@@ -374,7 +367,6 @@
   margin: 0px 30px;
 }
 #bodyIndex #main #footer #footerWordsContainer h3 {
-  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   color: grey;
   letter-spacing: 2px;
@@ -417,9 +409,6 @@ hr {
   margin: 0px 50px;
 }
 
-#bodyEventos {
-  /* background-color: #212529; */
-}
 #bodyEventos #eventos {
   margin: 66px 30px 30px 30px;
 }
@@ -464,6 +453,9 @@ hr {
 #bodyEventos #eventos #eventosGrilla .flyercontainer .eventosFlyer:hover {
   filter: grayscale(0%);
   transition: 0s;
+}
+#bodyEventos #eventos .modal-body {
+  font-family: sans-serif;
 }
 #bodyEventos #eventos .modal-body .eventosNombreYProductora {
   display: flex;
@@ -595,6 +587,16 @@ hr {
   margin: 0px 200px;
   margin-top: 116px;
 }
+@media only screen and (min-width: 321px) and (max-width: 576px) {
+  #productorasmain {
+    margin: 116px 0px 0px 0px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  #productorasmain {
+    margin: 116px 0px 0px 0px;
+  }
+}
 #productorasmain .productora {
   display: flex;
   flex-wrap: wrap;
@@ -620,9 +622,19 @@ hr {
   justify-content: space-evenly;
   max-width: 800px;
 }
+@media only screen and (min-width: 321px) and (max-width: 576px) {
+  #productorasmain .productora .productoraInfo {
+    padding: 30px 10px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  #productorasmain .productora .productoraInfo {
+    padding: 30px 10px;
+  }
+}
 #productorasmain .productora .productoraInfo h3 {
   text-align: center;
-  font-weight: 100;
+  font-weight: 400;
   font-size: 3rem;
 }
 @media only screen and (min-width: 321px) and (max-width: 576px) {
@@ -1018,6 +1030,16 @@ hr {
     grid-template-areas: "rectangular01 rectangular01" "rectangular01 rectangular01" "rectangular01 rectangular01" "rectangular01 rectangular01" "cuadrada01 cuadrada02" "cuadrada01 cuadrada02" "cuadrada01 cuadrada02" "cuadrada03 cuadrada04" "cuadrada03 cuadrada04" "cuadrada03 cuadrada04" "iframe01 iframe01" "iframe01 iframe01" "iframe01 iframe01" "iframe01 iframe01" "rectangular02 rectangularvertical01" "rectangular02 rectangularvertical01" "rectangular02 rectangularvertical01" "rectangular03 rectangularvertical01" "rectangular03 rectangularvertical01" "rectangular03 rectangularvertical01" "iframe02 iframe02" "iframe02 iframe02" "iframe02 iframe02" "iframe02 iframe02" "cuadrada05 cuadrada06" "cuadrada05 cuadrada06" "cuadrada05 cuadrada06" "cuadrada07 cuadrada08" "cuadrada07 cuadrada08" "cuadrada07 cuadrada08" "rectangular04 rectangular04" "rectangular04 rectangular04" "rectangular04 rectangular04" "rectangular04 rectangular04";
   }
 }
+@media only screen and (min-width: 321px) and (max-width: 576px) {
+  #bodyGaleria {
+    background-color: #212529;
+  }
+}
+@media only screen and (max-width: 320px) {
+  #bodyGaleria {
+    background-color: #212529;
+  }
+}
 
 .mainNosotros {
   display: flex;
@@ -1037,6 +1059,7 @@ hr {
   font-size: 13rem;
   font-weight: bolder;
   letter-spacing: 15px;
+  font-family: sans-serif;
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
   .mainNosotros .nosotroscontainer .nosotrosTitulo h1 {
@@ -1154,7 +1177,6 @@ hr {
   }
 }
 
-/* VARIABLES */
 /* ESTILOS GENERALES */
 * {
   padding: 0;
@@ -1162,7 +1184,7 @@ hr {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 #main {

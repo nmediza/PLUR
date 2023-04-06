@@ -1,5 +1,4 @@
 #bodyEventos {
-    /* background-color: #212529; */
     #eventos {
         margin: 66px 30px 30px 30px;
         @include tablet {
@@ -37,6 +36,7 @@
             }
         }
         .modal-body {
+            font-family: $second-font;
             .eventosNombreYProductora {
                 display: flex;
                 flex-wrap: wrap;
