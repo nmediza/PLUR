@@ -215,6 +215,7 @@
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-evenly;
+                transition: transform linear 1s;
                 @include mobileLg {
                     padding: 0px 20px;
                     margin-bottom: 30px;
@@ -262,6 +263,9 @@
                             justify-content: center;
                             margin-top: 15px;
                         }
+                    }
+                    &:hover {
+                        transform: scale(1.05);
                     }
                 }        
             }

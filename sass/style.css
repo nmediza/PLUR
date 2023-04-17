@@ -270,6 +270,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  transition: transform linear 1s;
 }
 @media only screen and (min-width: 321px) and (max-width: 576px) {
   #bodyIndex #main #library #libraryCardContainer {
@@ -319,6 +320,9 @@
   display: flex;
   justify-content: center;
   margin-top: 15px;
+}
+#bodyIndex #main #library #libraryCardContainer .libraryCardBorder:hover {
+  transform: scale(1.05);
 }
 #bodyIndex #main #videoContainer {
   display: flex;
@@ -454,6 +458,16 @@ hr {
   filter: grayscale(0%);
   transition: 0s;
 }
+@media only screen and (min-width: 321px) and (max-width: 576px) {
+  #bodyEventos #eventos .modal-header h6 {
+    font-size: 0.85rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  #bodyEventos #eventos .modal-header h6 {
+    font-size: 0.8rem;
+  }
+}
 #bodyEventos #eventos .modal-body {
   font-family: sans-serif;
 }
@@ -464,6 +478,23 @@ hr {
   padding-top: 20px;
   justify-content: space-between;
   align-items: center;
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  #bodyEventos #eventos .modal-body .eventosNombreYProductora div h2 {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 576px) {
+  #bodyEventos #eventos .modal-body .eventosNombreYProductora div h2 {
+    text-align: center;
+    font-size: 2.3rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  #bodyEventos #eventos .modal-body .eventosNombreYProductora div h2 {
+    text-align: center;
+    font-size: 2.3rem;
+  }
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
   #bodyEventos #eventos .modal-body .eventosNombreYProductora div {
@@ -645,6 +676,7 @@ hr {
 @media only screen and (max-width: 320px) {
   #productorasmain .productora .productoraInfo h3 {
     font-size: 2rem;
+    width: 280px;
   }
 }
 #productorasmain .productora .productoraInfo p {

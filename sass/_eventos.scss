@@ -35,6 +35,16 @@
                 } 
             }
         }
+        .modal-header {
+            h6 {
+                @include mobileLg {
+                    font-size: 0.85rem;
+                }
+                @include mobileSm {
+                    font-size: 0.8rem;
+                }
+            }
+        }
         .modal-body {
             font-family: $second-font;
             .eventosNombreYProductora {
@@ -45,6 +55,19 @@
                 justify-content: space-between;
                 align-items: center;
                 div {
+                    h2 {
+                        @include tablet {
+                            text-align: center;
+                        }
+                        @include mobileLg {
+                            text-align: center;
+                            font-size: 2.3rem;
+                        }
+                        @include mobileSm {
+                            text-align: center;
+                            font-size: 2.3rem;
+                        }
+                    }
                     @include tablet {
                         display: flex;
                         flex-direction: column;
